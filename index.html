@@ -14,11 +14,16 @@
     <title>EasyBank</title>
   </head>
   <body>
-    <nav id="nav" class="navbar navbar-expand navbar-light bg-light bg-white fixed-top py-3">
+    <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light bg-white fixed-top py-3">
       <span class="navbar-brand">
         <img src="images/logo.svg" />
       </span>
-      <div id="menu" class="navbar-nav">
+
+    <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='#menu'>
+      <span class='navbar-toggler-icon'></span>
+    </button>
+
+      <div id="menu" class="navbar-nav navbar-collapse collapse " style='display: none;'>
         <a href="#intro" class="nav-link">Intro</a>
         <a href="#why" class="nav-link">Why</a>
         <a href="#articles" class="nav-link">Articles</a>
@@ -28,18 +33,19 @@
     <main id="main" class="main">
       <section id="intro" class="section intro bg-light">
         <div class="container">
-          <div class="row justify-content-center align-items-center">
+          <div class="row justify-content-center align-items-center"
+          >
             <div class="col-12 col-lg-6 order-lg-1 text-center">
-              <img class="intro-image" src="images/image-mockups.png" "Mockups of the mobile app">
+              <img class="intro-image" data-aos="fade-left" src="images/image-mockups.png" "Mockups of the mobile app">
             </div>
             <div class="col-12 col-lg-6">
-              <h1>Next generation digital banking</h1>
+              <h1 data-aos='fade-right'>Next generation digital banking</h1>
       
-              <p>
+              <p data-aos='fade-right'>
                 Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
               </p>
       
-              <a class="btn btn-success">Request Invite</a>
+              <a class="btn btn-success" data-aos='fade-right'>Request Invite</a>
             </div>
           </div>
         </div>
@@ -48,7 +54,7 @@
       <section id="why" class="section">
         <div class="container">
           <div class="row">
-            <div class="col col-md-6">
+            <div class="col col-md-6"  data-aos='fade-up'>
               <h2 class="section-title">
                 Why choose Easybank?
               </h2>
@@ -61,7 +67,7 @@
           
         
             <div class="col-lg-12 row">
-              <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <div class="col-12 col-md-6 col-lg-3 mt-5" data-aos= 'fade-up' data-aos= 'fade-up' data-aos-delay='300'>
                 <img src="images/icon-online.svg" alt="Online Banking icon">
                 <h3 class="mt-4">
                   Online Banking
@@ -72,7 +78,7 @@
                 </p>
               </div>
             
-              <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <div class="col-12 col-md-6 col-lg-3 mt-5" data-aos= 'fade-up' data-aos= 'fade-up' data-aos-delay='600'>
                 <img src="images/icon-budgeting.svg" alt="Simple Budgeting icon">
                 <h3 class="mt-4">
                   Simple Budgeting
@@ -83,7 +89,7 @@
                 </p>
               </div>
             
-              <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <div class="col-12 col-md-6 col-lg-3 mt-5" data-aos= 'fade-up' data-aos= 'fade-up' data-aos-delay='900'>
                 <img src="images/icon-onboarding.svg" alt="Fast Onboarding icon">
                 <h3 class="mt-4">
                   Fast Onboarding
@@ -94,7 +100,7 @@
                 </p>
               </div>
             
-              <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <div class="col-12 col-md-6 col-lg-3 mt-5" data-aos= 'fade-up' data-aos= 'fade-up' data-aos-delay='1200'>
                 <img src="images/icon-api.svg" alt="Open API icon">
                 <h3 class="mt-4">
                   Open API
@@ -119,7 +125,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-6 col-xl-3 mt-3">
+            <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos= 'fade-left' data-aos= 'fade-up' data-aos-delay='300'>
               <div class="card">
                 <img src="images/image-currency.jpg" class="card-img-top" alt="Article currency image">
                 <div class="card-body">
@@ -130,7 +136,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-3 mt-3">
+            <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos= 'fade-left' data-aos= 'fade-up' data-aos-delay='600'>
               <div class="card">
                 <img src="images/image-restaurant.jpg" class="card-img-top" alt="Article restaurant image">
                 <div class="card-body">
@@ -141,7 +147,7 @@
               </div>
             </div>
             
-            <div class="col-12 col-md-6 col-xl-3 mt-3">
+            <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos= 'fade-left' data-aos= 'fade-up' data-aos-delay='900'>
               <div class="card">
                 <img src="images/image-plane.jpg" class="card-img-top" alt="Article plane image">
                 <div class="card-body">
@@ -152,7 +158,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-3 mt-3">
+            <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos= 'fade-left' data-aos= 'fade-up' data-aos-delay='1200'>
               <div class="card">
                 <img src="images/image-confetti.jpg" class="card-img-top" alt="Article confetti image">
                 <div class="card-body">
@@ -187,6 +193,6 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
   </body>
 </html>
